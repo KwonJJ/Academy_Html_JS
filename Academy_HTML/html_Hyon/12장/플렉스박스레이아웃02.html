@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            .container {
+                display: flex;
+                background-color: lightgray;
+                border: 1px solid black;
+                margin-bottom: 30px;
+            }
+
+            #box {
+                padding: 5px 45px;
+                margin: 5px;
+                background-color: black;
+                color: white;
+                font-size: 20px;
+            }
+
+            /* justify-content -> 좌우를 기준으로 맞춤 */
+            #opt1 {
+                justify-content: flex-start;
+                /* 시작점 기준 맞춰서 배치*/
+            }
+
+            #opt2 {
+                justify-content: flex-end;
+                /* 끝점 기준 맞춰서 배치 */
+            }
+
+            #opt3 {
+                justify-content: center;
+                /* 중앙 기준 맞춰서 배치(안쪽 여백 똑같이) */
+            }
+
+            #opt4 {
+                justify-content: space-between;
+                /* 시작점과 끝점 배치 후 같은 간격 맞춰서 배치(전체 여백 똑같이) */
+            }
+
+            #opt5 {
+                justify-content: space-around;
+                /* 전체 항목 같은 간격 맞춰서 배치 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="opt1">
+            <div id="box">1</div>
+            <div id="box">2</div>
+            <div id="box">3</div>
+            <div id="box">4</div>
+        </div>
+
+        <div class="container" id="opt2">
+            <div id="box">1</div>
+            <div id="box">2</div>
+            <div id="box">3</div>
+            <div id="box">4</div>
+        </div>
+
+        <div class="container" id="opt3">
+            <div id="box">1</div>
+            <div id="box">2</div>
+            <div id="box">3</div>
+            <div id="box">4</div>
+        </div>
+
+        <div class="container" id="opt4">
+            <div id="box">1</div>
+            <div id="box">2</div>
+            <div id="box">3</div>
+            <div id="box">4</div>
+        </div>
+
+        <div class="container" id="opt5">
+            <div id="box">1</div>
+            <div id="box">2</div>
+            <div id="box">3</div>
+            <div id="box">4</div>
+        </div>
+    </body>
+</html>

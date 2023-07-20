@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자리배치02</title>
+    </head>
+    <body>
+        <script>
+            var memNum = parseInt(prompt('입장객은 몇 명 인가요? '));
+            var colNum = parseInt(prompt('한 줄에 몇 명씩 앉나요? '));
+
+            var rowNum;
+
+            if (memNum % colNum == 0) {
+                rowNum = parseInt(memNum / colNum);
+                document.write('모두' + rowNum + '줄이 필요하고 남는 좌석이 없습니다.');
+            } else {
+                rowNum = parseInt(memNum / colNum) + 1;
+                var remain = colNum * rowNum - memNum;
+                document.write('모두 ' + rowNum + '줄이 필요하고 ' + remain + '좌석이 남습니다.');
+            }
+        </script>
+    </body>
+</html>
+<!-- 
+    ex. 입장객 32명, 한줄에 7명씩
+    출력 -> 모두 5줄이 필요하고 3좌석이 남습니다. 
+ -->

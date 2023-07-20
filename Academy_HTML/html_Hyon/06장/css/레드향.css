@@ -1,0 +1,22 @@
+/*
+h1,p {
+    text-align: center;
+}
+.red{
+    font-style: italic;
+    font-size: 30px;
+}
+
+#a{ /* id선택자(#) */
+/*    border : 2px dotted red; /*dotted -> 점선*/
+/*   color : blue;
+}*/
+/*.class { /* .클래스명{스타일 규칙} -> 특정 부분에 스타일 적용 */
+/*.class는 여러개 적용 가능하지만 id는 한번만 가능 */
+/*그룹 선택자( , ) -> 같은 거 적용시 사용*/
+p{
+    color: red;
+}
+body{
+    background-color: aqua;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>그라데이션예제01</title>
+        <style>
+            .grad1 {
+                width: 300px;
+                height: 200px;
+                background: linear-gradient(to right bottom, blue, white);
+                /* 왼쪽 위에서 오른쪽 아래방향으로, 파란색에서 흰색으로 */
+            }
+            .grad2 {
+                width: 300px;
+                height: 200px;
+                background: linear-gradient(45deg, yellow, red); /* 45도방향, 노란색에서 흰색으로 */
+            }
+            .grad3 {
+                width: 300px;
+                height: 200px;
+                background: linear-gradient(45deg, red, orange, yellow, green, blue, navy, purple);
+                /* 45도방향, 빨, 주, 노, 초, 파, 남, 보 */
+            }
+            .grad4 {
+                width: 300px;
+                height: 200px;
+                background: linear-gradient(to bottom, #06f, white 30%, blue);
+                /* 전체 중 위에서부터 30%지점에 하얀색 추가(중지점 추가) */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grad1"></div>
+        <div class="grad2"></div>
+        <div class="grad3"></div>
+        <div class="grad4"></div>
+    </body>
+</html>
+<!-- 
+    linear-gradient(to <방향> 또는 <각도>, <색상 중지점>, [<색장 중지점>, ...]);
+ -->

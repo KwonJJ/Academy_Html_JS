@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>응용문제01</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Gasoek+One&family=Nanum+Pen+Script&display=swap');
+            * {
+                /* 전체 초기화 구문 */
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 960px;
+                margin: 0 auto;
+            }
+
+            .navi {
+                width: 960px;
+                height: 60px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #ccc;
+            }
+
+            .navi ul {
+                padding-top: 10px;
+                padding-bottom: 5px;
+                text-align: center;
+            }
+
+            .navi ul li {
+                list-style: none;
+                display: inline-block;
+                width: 150px;
+                padding: 10px;
+            }
+
+            .navi a:link,
+            .navi a:visited {
+                font-size: 14px;
+                padding: 10px;
+                text-decoration: none;
+                /* 밑줄 없음 */
+                color: black;
+            }
+
+            .navi a:hover,
+            .navi a:focus {
+                /* 마우스를 위에 올려놓거나 포커스가 있을 때 */
+                background-color: #222; /* 배경색 */
+                color: #fff; /* 글자색 */
+            }
+
+            .navi a:active {
+                /* 마우스를 클릭하고 있을 때 */
+                background-color: #f00; /* 배경색 */
+            }
+
+            #signup {
+                background: #fff;
+                border: 1px solid #222;
+                border-radius: 5px;
+                padding: 20px;
+                width: 400px;
+                margin: 30px auto;
+            }
+
+            #signup fieldset {
+                border: 1px solid #ccc;
+                margin-bottom: 30px;
+                padding: 30px;
+            }
+
+            #signup legend {
+                font-size: 16px;
+                font-weight: bold;
+                padding-left: 5px;
+                padding-bottom: 10px;
+            }
+
+            #signup ul li {
+                line-height: 30px;
+                list-style: none;
+                padding: 5px 10px;
+                margin-bottom: 2px;
+            }
+
+            #signup fieldset:first-of-type label {
+                /* signup fieldset 중 첫 번째 타입 밑에 있는 label(이름, 연락처) */
+                float: left;
+                font-size: 13px;
+                width: 60px;
+            }
+
+            /*
+            #signup input[type='text'],
+            input[type='tel'] {
+                /* input태그 중 타입이 text와 tel인 것 선택
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                padding: 5px;
+                width: 200px;
+            }
+            */
+
+            #signup input:not([type='radio']) {
+                /* singup input태그 중 타입이 radio가 아닌것 */
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                padding: 5px;
+                width: 200px;
+            }
+
+            #signup input:not([type='radio']:hover) {
+                /* input태그 중 타입이 radio가 아닌 것에 마우스를 올려 놓으면 */
+                border-color: #f00;
+            }
+
+            #signup input:checked + label {
+                /* input 요소에 checked속성이 추가 되었을 때 */
+                color: red;
+                font-weight: bold;
+                /* 글자 굵게 */
+            }
+
+            #signup button {
+                border: 1px solid #222;
+                border-radius: 20px;
+                display: block;
+                font-size: 16px;
+                font-family: 'Diphylleia', serif;
+                /* 구글 폰트 가져와서 변경 */
+                letter-spacing: 1px;
+                margin: auto;
+                padding: 7px 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navi">
+                <ul>
+                    <li><a href="#">이용 안내</a></li>
+                    <li><a href="#">객실 소개</a></li>
+                    <li><a href="#">예약 방법 및 요금</a></li>
+                    <li><a href="#">예약하기</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form id="signup">
+            <fieldset>
+                <legend>개인정보</legend>
+                <ul>
+                    <li>
+                        <label for="fullname">이름</label>
+                        <input id="fullname" name="fullname" type="text" required />
+                    </li>
+                    <label for="tel">연락처</label>
+                    <input type="tel" name="tel" type="tel" />
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>객실 형태</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="room" id="basic" />
+                        <label for="text">기본형(최대 2인)</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="room" id="family" />
+                        <label for="family">가족형(최대 8인)</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">제출</button>
+        </form>
+    </body>
+</html>

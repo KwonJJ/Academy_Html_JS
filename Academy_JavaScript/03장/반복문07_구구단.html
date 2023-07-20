@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>반복문07_구구단</title>
+        <style>
+            .container {
+                width: 200px;
+                border: 2px solid #ccc;
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                display: inline-block;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            for (var i = 2; i <= 9; i++) {
+                document.write("<div class = 'container'>");
+                document.write('<h2>' + '구구단 ' + i + '단' + '</h2>');
+                for (var j = 1; j <= 9; j++) {
+                    var mul = i * j;
+                    document.write('<p>' + i + ' * ' + j + ' = ' + mul + '</p>');
+                }
+                document.write('</div>');
+            }
+        </script>
+    </body>
+</html>
+<!-- 
+    반복문을 이용해 구구단 출력
+ -->

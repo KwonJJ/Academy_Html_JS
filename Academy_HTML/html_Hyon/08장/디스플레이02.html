@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>디스플레이</title>
+    <style>
+        *{
+            box-sizing: border-box; /* 박스 사이즈를 외곽선 포함해서 설정 (모든 요소에 테두리까지 포함한 너빗값 지정)*/
+        }
+        nav ul{
+            list-style: none;
+            margin-left: -40px;
+        }
+        nav ul li{
+            display: inline-block;
+            border: 1px solid #222;
+            padding: 20px;
+            margin: 0 20px;
+        }
+        #a{
+            display: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="images/네이버 메일 그림.PNG">
+        <img src="images/네이버 카페 그림.PNG">
+        <img src="images/네이버 블로그 그림.PNG">
+        <ul>
+            <li id = "a">메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

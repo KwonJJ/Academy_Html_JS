@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>네이버 블로그 그리드 예제</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .container {
+                width: 600px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin: 30px auto;
+            }
+
+            .items {
+                position: relative;
+                text-align: center;
+            }
+
+            .items .text {
+                width: 100%;
+                position: absolute;
+                top: 170px;
+                background: rgba(0, 0, 0, 0.6);
+                color: white;
+                height: 30px;
+            }
+
+            .items .text h3 {
+                margin-bottom: 20px;
+            }
+
+            .items:hover .text {
+                transition: 1s;
+                height: 200px;
+                top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items" id="danang">
+                <img src="images/다낭.PNG" />
+                <div class="text">
+                    <h3>다낭에서 놀이공원</h3>
+                    <p>다낭에서 가족여행</p>
+                    <p>신나는 가족여행</p>
+                    <p>올해 최고의 해외여행</p>
+                </div>
+            </div>
+
+            <div class="items" id="lego">
+                <img src="images/레고랜드.PNG" />
+                <div class="text">
+                    <h3>다낭에서 놀이공원</h3>
+                    <p>다낭에서 가족여행</p>
+                    <p>신나는 가족여행</p>
+                    <p>올해 최고의 해외여행</p>
+                </div>
+            </div>
+
+            <div class="items" id="viking">
+                <img src="images/월미도.PNG" />
+                <div class="text">
+                    <h3>다낭에서 놀이공원</h3>
+                    <p>다낭에서 가족여행</p>
+                    <p>신나는 가족여행</p>
+                    <p>올해 최고의 해외여행</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

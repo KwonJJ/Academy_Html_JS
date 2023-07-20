@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            #wrapper {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                /* 
+                auto-fit -> 화면 끝까지 채워짐
+                auto-fill -> 칼럼의 최소 너비만 표시하고 남는 공간은 그대로 둠
+                 */
+                margin-bottom: 20px;
+            }
+
+            .items {
+                border: 1px solid black;
+                padding: 20px;
+            }
+
+            .items:nth-child(odd) {
+                background: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="items">가나다라마바사아자차카타파하</div>
+            <div class="items">가나다라마바사아자차카타파하가나다라마바사아자차카타파하</div>
+            <div class="items">가나다라마바사아자차카타파하</div>
+            <div class="items">가나다라마바사아자차카타파하</div>
+            <div class="items">가나다라마바사</div>
+        </div>
+    </body>
+</html>

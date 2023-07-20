@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            #wrapper {
+                width: 1000px;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                /* 너비의 비율이 1:2:1인 칼럼 3개 배치*/
+                /*
+                grid-template-columns: repeat(3, 1fr); -> (이것도 가능)3개를 1:1:1 비율로 맞춤
+                */
+                grid-template-rows: 100px;
+                /* 줄 높이 100px */
+            }
+
+            .items {
+                border: 1px solid black;
+                padding: 20px;
+            }
+
+            .items:nth-child(odd) {
+                background: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="items">가나다라마바사아자차카타파하</div>
+            <div class="items">가나다라마바사아자차카타파하</div>
+            <div class="items">가나다라마바사아자차카타파하</div>
+        </div>
+    </body>
+</html>

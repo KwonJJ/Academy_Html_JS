@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    키워드 사용해 글자 크기 지정 가능
+    xx-small < x-small < small < medium < large < x-large < xx-large
+
+    text-align속성
+    text-align : start | end | left | right | center | justfy | match-parent
+    start : 현재 텍스트 줄으 시작 위치에 맞춰 문단 정렬
+    end : 현재 텍스트 줄의 끝 위치에 맞춰 문단 정렬
+    left : 왼쪽에 맞춰 문단 정렬
+    right : 오른쪽에 맞춰 문단 정렬
+    center : 가운데 맞춰 문단 정렬
+    justify : 양쪽에 맞춰 문단 정렬
+    match-parent : 부모 요소를 따라 문단 정렬
+
+ -->
+
+<head>
+    <title>글자 정렬</title>
+    <style>
+        #container {
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: black;
+            line-height: 100px;
+            /* 글자 높이 */
+        }
+
+        h1 {
+            color: white;
+        }
+
+        #red {
+            width: 150px;
+            height: 200px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: red;
+            line-height: 200px;
+            color: yellow;
+        }
+
+        #blue {
+            width: 250px;
+            height: 170px;
+            margin: 0 auto;
+            text-align: right;
+            background-color: blue;
+            line-height: 170px;
+            color: rgba(126, 65, 65, 0.596);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>HTML</h1>
+    </div>
+    <br>
+    <h1 id="red">CSS</h1><br>
+    <h1 id="blue">자바스크립트</h1>
+</body>
+
+</html>

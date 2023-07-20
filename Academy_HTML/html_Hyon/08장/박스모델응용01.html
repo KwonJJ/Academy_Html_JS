@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>박스모델 응용문제</title>
+    <style>
+        #a{
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            box-shadow: -5px 0 green, 0 -5px red, 5px 0 blue, 0 5px yellow;
+            margin-bottom: 20px; /* 밑에 여백 넣기 */
+        }
+        #b{
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            box-shadow: inset -5px 0 green, inset 0 -5px red, inset 5px 0 blue, inset 0 5px yellow;
+            /* inset : 뒤집어지는 개념 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+</body>
+<!-- 
+    box-shadow : <수평 거리> <수직 거리> <흐림(블러효과) 정도> <번짐 정도> <색상> inset
+ -->
+</html>

@@ -1,0 +1,10 @@
+#black{
+   /* width: 215px; /* 너비 조정 */
+    display: inline-block;
+    color: white;
+    background-color: black;
+}
+.blue{
+    color: blue;
+    list-style: none;
+}

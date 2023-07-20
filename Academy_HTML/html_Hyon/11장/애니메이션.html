@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>애니메이션</title>
+        <style>
+            .box {
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin-bottom: 20px;
+            }
+
+            #box1 {
+                background-color: greenyellow;
+                animation-name: shape;
+                /* 애니메이션 이름 지정(이름은 아무거나 가능) */
+                animation-duration: 3s;
+                /* 3초 동안 애니메이션 실행 시간 */
+            }
+            @keyframes shape {
+                /* #box1의 shape(애니메이션 이름) 선택 */
+                from {
+                    /* 시작 지점 */
+                    border: 3px solid red;
+                }
+                50% {
+                    /* 절반동안만 실행 */
+                    border: 1px solid transparent;
+                    border-radius: 50%;
+                }
+                to {
+                    /* 끝 지점 */
+                    border: 1px solid transparent;
+                    /* 1px짜리 투명 테두리 */
+                    border-radius: 0%;
+                }
+            }
+
+            #box2 {
+                background-color: yellow;
+                animation-name: test;
+                /* 애니메이션 이름 지정 */
+                animation-duration: 5s;
+                /* 5초동안 애니매이션 실행 */
+                animation-iteration-count: infinite;
+                /* 애니메이션 반복횟수 무한(inginite) */
+            }
+            @keyframes test {
+                /* box2의 test(애니메이션 이름) 선택 */
+                form {
+                }
+                50% {
+                    transform: translateX(300px);
+                    background: purple;
+                }
+                to {
+                    transform: translate(300px, 300px);
+                    background: red;
+                }
+            }
+
+            #box3 {
+                background-color: orange;
+                animation-name: test2;
+                /* 애니메이션 이름 지정 */
+                animation-duration: 10s;
+                /* 10초 동안 애니메이션 실행 */
+                animation-iteration-count: infinite;
+                /* 애니메이션 반복 횟수 무한(infinite) */
+            }
+            @keyframes test2 {
+                from {
+                    /* 시작 지점 */
+                }
+                25% {
+                    transform: translateX(300px);
+                    background: green;
+                }
+                50% {
+                    transform: translate(300px, 300px);
+                    background: navy;
+                }
+                75% {
+                    transform: translateY(300px);
+                    background: black;
+                }
+                to {
+                    /* 끝 지점 */
+                    transform: translate(0 0);
+                    background: red;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </body>
+</html>

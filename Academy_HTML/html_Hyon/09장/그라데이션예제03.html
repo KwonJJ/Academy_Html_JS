@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>그라데이션예제03</title>
+        <style>
+            div {
+                width: 300px;
+                height: 300px;
+            }
+            .grad1 {
+                background: repeating-linear-gradient(yellow, red 20px);
+                /*
+                   linear -> 위에서부터 시작 : 노랑과 빨강을 20px씩 반복()
+                   시작과 끝지점을 정확히 설정하지 않아서 약간 희미하게 나옴
+                */
+            }
+            .grad2 {
+                background: repeating-radial-gradient(circle, white, #ccc 10%);
+                /* 
+                   원형(원형은 가운데부터)을 흰색과 화색을 10%씩 채움
+                   radial -> 가운데부터 시작(원형)
+                 */
+            }
+            .grad3 {
+                background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+                /* 시작지점과 끝 지점을 설정해서 구역 명확하게 설정 */
+            }
+            .grad4 {
+                background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%);
+                /* 시작지점과 끝 지점을 설정해서 선명하게 보임 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grad1"></div>
+        <div class="grad2"></div>
+        <div class="grad3"></div>
+        <div class="grad4"></div>
+    </body>
+</html>
+<!--
+
+ -->

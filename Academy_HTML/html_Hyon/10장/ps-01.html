@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>앵커 예제01</title>
+        <style>
+            ul li {
+                list-style: none;
+                display: inline-block;
+                width: 200px;
+            }
+            a:hover {
+                background-color: black;
+                color: white;
+            }
+            #intro:target {
+                background-color: black;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <ul>
+                <li><a href="#intro">이용안내</a></li>
+                <li>객실 소개</li>
+                <li>예약 방법 및 요금</li>
+                <li>예약하기</li>
+            </ul>
+        </div>
+
+        <div id="intro">
+            <h1>객실 소개</h1>
+            <p>가나다라마바사가나다라마바사가나다라마바사</p>
+        </div>
+    </body>
+</html>

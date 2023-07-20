@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>나이계산</title>
+    </head>
+    <body>
+        <script>
+            var thisYear = 2023;
+            var thisMonth = 7;
+            var birthYear = parseInt(prompt('태어난 연도를 입력해 주세요. '));
+            var birthMonth = parseInt(prompt('태어난 월을 입력해 주세요. '));
+
+            var age;
+            if (birthMonth < thisMonth) {
+                age = thisYear - birthYear;
+            } else {
+                age = thisYear - birthYear - 1;
+            }
+            alert(thisYear + '년 기준 당신의 나이는 ' + age + '세 입니다.');
+        </script>
+    </body>
+</html>
+<!-- 
+    두 연도를 이용하여 현재 나이를 출력
+    나이는 2023에서 태어난 연도를 뺀 숫자
+    월이 지나지 않았으면 1을 빼고
+    ex) 2023년 기준 당신의 나이는 23세입니다.
+ -->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>마무리문제 02</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            ul {
+                margin: 30px;
+                list-style: none;
+                text-align: center;
+            }
+            ul li {
+                float: left;
+                width: 150px;
+                padding: 10px 30px;
+                background: lightgray;
+            }
+            ul li:not(:last-of-type) {
+                /* ul 밑의 li태그 중 마지막 타입 제외 나머지 전부 적용 */
+                border-right: 2px solid black;
+                background: #555;
+                color: #fff;
+            }
+
+            ul li:last-of-type {
+                /* ul 밑의 li태그 중 마지막 타입에만 적용 */
+                border: none;
+            }
+
+            ul li:last-of-type:hover {
+                /* ul 밑의 li태그 중 마지막 타입에 마우스 올릴 시 적용 */
+                background: #b30000;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <li>메뉴5</li>
+            <li>메뉴6</li>
+        </ul>
+    </body>
+</html>

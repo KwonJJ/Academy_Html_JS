@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>곰 트랜지션</title>
+        <style>
+            .container {
+                width: 200px;
+                height: 30px auto;
+            }
+
+            img {
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                box-shadow: 5px 5px 30px 2px #000;
+            }
+
+            img:hover {
+                transition: 5s ease;
+                transform: rotateY(3600deg);
+            }
+
+            #container:hover {
+                transition: 20s ease;
+                transform: rotateZ(10000deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <img src="images/bear.jpg" />
+        </div>
+    </body>
+</html>

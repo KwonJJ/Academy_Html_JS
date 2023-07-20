@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>트랜지션01</title>
+        <style>
+            .box {
+                width: 200px;
+                height: 200px;
+                background: orange;
+                border: 1px solid black;
+                transition: 2s ease-in;
+                /* 느리게 시작 후 점점 빨리짐 */
+            }
+
+            .box:hover {
+                width: 400px;
+                height: 400px;
+                background-color: red;
+                transform: rotate(360deg) translateX(500px);
+                /* 360도 회전하면서 오른쪽으로 500px만큼 이동 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>

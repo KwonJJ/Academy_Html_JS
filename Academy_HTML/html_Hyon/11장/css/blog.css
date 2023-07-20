@@ -1,0 +1,34 @@
+img {
+    position: absolute;
+}
+.container {
+    position: absolute;
+}
+
+h1 {
+    position: relative;
+    width: 400px;
+    text-align: center;
+    top: 190px;
+    opacity: 0.5;
+}
+.caption {
+    width: 400px;
+    height: 200px;
+    font-size: 24px;
+    padding-top: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+    transform: rotateY(100px);
+}
+.caption:hover {
+    position: relative;
+    width: 400px;
+    height: 260px;
+    top: 0;
+    font-size: 24px;
+    color: white;
+    opacity: 1;
+}

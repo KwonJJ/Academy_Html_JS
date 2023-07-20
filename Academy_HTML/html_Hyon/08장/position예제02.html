@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>포지션2</title>
+    <style>
+        #static{
+            position: static; /* 큰 의미 없음, 원래 정해진대로 나옴 */
+        }
+
+        #relative-1{
+            position: relative; /* 이것만 사용시 아무 변화 없음(relaive = 상대위치, absolute = 절대위치) */
+            left : 30px; /* 값을 줘야 변화 생김 */
+            top : 30px; /* 값을 줘야 변화 생김 */
+        }
+        #relative-2{
+            position: relative; /* 이것만 사용시 아무 변화 없음(relaive = 상대위치, absolute = 절대위치) */
+            left : 50px; /* 값을 줘야 변화 생김 */
+            top : -30px; /* 값을 줘야 변화 생김 */
+        }
+        #fixed{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed; /* 고정시킴 */
+            right: 30px;
+            top : 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="static">
+        29일 한국기업평가는 한국씨티은행의 무보증 사채 신용등급을 'AAA(부정적)'에서 'AA+(안정적)'로 한 단계 하향 조정했다. 이미 한국기업평가는 지난해 4월에도 한국씨티은행의 신용도 전망을
+        '부정적'으로 바꾸며 등급 강등 가능성을 내비쳤다.
+    </p>
+    <p id="relative-1">
+        29일 한국기업평가는 한국씨티은행의 무보증 사채 신용등급을 'AAA(부정적)'에서 'AA+(안정적)'로 한 단계 하향 조정했다. 이미 한국기업평가는 지난해 4월에도 한국씨티은행의 신용도 전망을
+        '부정적'으로 바꾸며 등급 강등 가능성을 내비쳤다.
+    </p>
+    <p id="relative-2">
+        29일 한국기업평가는 한국씨티은행의 무보증 사채 신용등급을 'AAA(부정적)'에서 'AA+(안정적)'로 한 단계 하향 조정했다. 이미 한국기업평가는 지난해 4월에도 한국씨티은행의 신용도 전망을
+        '부정적'으로 바꾸며 등급 강등 가능성을 내비쳤다.
+    </p>
+    <p id="fixed">
+        고정 광고
+    </p>
+</body>
+</htmlg=>

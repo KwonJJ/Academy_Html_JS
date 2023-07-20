@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            input:checked + label {
+                /* input태그 중 :checked가 되있으면 옆(+)에 있는 라벨 */
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>객실형태</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="room" id="basic" />
+                        <label for="basic">기본형(최대 2인)</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="room" id="family" />
+                        <label for="family">가족형(최대 8인)</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </body>
+</html>
+<!-- 
+    :target - 앵커(a)로 연결된 부분에 스타일 적용
+ -->

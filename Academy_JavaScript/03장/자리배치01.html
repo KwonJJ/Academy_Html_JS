@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자리배치01</title>
+    </head>
+    <body>
+        <script>
+            var mamNum = parseInt(prompt('입장객은 몇 명 인가요? '));
+            var colNum = parseInt(prompt('한 줄에 몇 명씩 앉나요? '));
+
+            var rowNum;
+
+            if (mamNum % colNum == 0) {
+                rowNum = parseInt(mamNum / colNum);
+            } else {
+                rowNum = parseInt(mamNum / colNum) + 1;
+            }
+            document.write('모두 ' + rowNum + '줄이 필요합니다.');
+        </script>
+    </body>
+</html>
+<!-- 
+    ex. 입장객 30명, 한줄에 7명씩
+    출력 -> 모두 5줄이 필요합니다.
+ -->

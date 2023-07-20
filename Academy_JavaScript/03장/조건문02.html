@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>조건문02</title>
+    </head>
+    <body>
+        <script>
+            var userName = prompt('방문자의 이름은? ', '');
+            /* '' -> 빈문자가 변수에 저장됨 */
+            /*
+            var userName = prompt('방문자의 이름은? '); -> 같은거임(빈문자)
+            */
+            if (userName) {
+                /*
+                값을 입력하지 않았을 땐 아무것도 출력되지 않음(flase값)
+                값을 입력했을 땐 입력한 값 출력(true값)
+                */
+                document.write(userName + '님 반갑습니다. 방문을 환영합니다.');
+            }
+        </script>
+    </body>
+</html>

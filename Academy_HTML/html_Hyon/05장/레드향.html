@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>레드향</title>
+  <style>
+    table,
+    tr,
+    td {
+      border: 1px solid rgb(26, 23, 23);
+      /* solid : 실선, dotted : 점선 */
+      /*px = 픽셀*/
+      border-collapse: collapse;
+      /*겹친선 하나로 만들기*/
+      padding: 10px;
+      /*여백 넣기*/
+    }
+
+    table {
+      text-align: center;
+      width: 500px;
+      /*width : 너비, height : 높이*/
+    }
+
+    img {
+      width: 200px;
+      /*px 대신 %로 사용 가능(% = 화면 크기만큼 조절*/
+      height: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>레드향</h1>
+  <ul>
+    <li>
+      선물용 3kg <input type="number" min="0" max="10" step="2">개 (최대10개) <!-- step = 숫자 간격 지정 -->
+    </li>
+    <li>
+      선물용 5kg <input type="range" min="0" max="5">개 (최대5개) <!-- range = 범위설정 -->
+    </li>
+  </ul>
+  <h2>주문 일자</h2>
+<input type="date" min = "2023-06-05" max="2023-06-23"> <!-- 달력 이용해 년, 월, 일(min,max 이용해 날짜 제한) -->
+<input type="month"> <!-- 달력 이용해 년, 월 -->
+<input type="week"> <!-- 달력 이용해 년, 몇 번째 주 -->
+<h2>주문 시간</h2>
+<input type="time"> <!-- 폼에서 시간(브라우저 시간대)을 입력하게 함 -->
+<input type="datetime">
+<input type="datetime-local"> <!-- 폼에서 시간(설정한 지역 시간대)을 입력하게 함 -->
+</body>
+
+</html>

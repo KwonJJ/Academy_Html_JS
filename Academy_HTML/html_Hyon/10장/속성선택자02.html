@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>속성선택자02</title>
+        <style>
+            ul {
+                list-style: none;
+            }
+
+            ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            ul li {
+                width: 100px;
+                padding: 20px 50px;
+                border: 2px solid black;
+                background: yellow;
+                display: inline-block;
+                margin-right: 20px;
+            }
+
+            a[target='_blank'] {
+                color: blue;
+                background-color: aqua;
+            }
+
+            a[href='abc'] {
+                color: orange;
+                background-color: red;
+            }
+
+            img[src='images/b.jpg'] {
+                width: 400px;
+                height: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a>정치</a></li>
+            <li><a href="#" target="_blank">경제</a></li>
+            <li><a href="abc">사회</a></li>
+            <li><a>문화 </a></li>
+        </ul>
+        <img src="images/a.jpg" />
+        <img src="images/b.jpg" />
+        <img src="images/c.jpg" />
+        <!-- 
+            그림 원본 사이즈 200, 200
+            똑같은 그림을 3번 화면에 표시 
+            (그림의 파일명은 각각 다르게 변경)
+            ex)a.jpg, b.jpg, c.jpg
+
+            그림 속성이 b인것만 크기 2배로 키우기
+         -->
+    </body>
+</html>

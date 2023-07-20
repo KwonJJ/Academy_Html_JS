@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>디스플레이</title>
+    <style>
+        *{
+            box-sizing: border-box; /* 박스 사이즈를 외곽선 포함해서 설정 (모든 요소에 테두리까지 포함한 너빗값 지정)*/
+        }
+        nav ul{ /* nav(네비게이션) 밑의 ul태그 */
+            list-style: none; /* ul의 o없애기 */
+        }
+        nav ul li{ /* nav(네비게이션) 밑의 ul 밑의 li태그 */
+            display: inline-block; /* inline-block -> 마진과 패딩을 지정할 수 있음 */
+            border: 1px solid #222;
+            padding: 20px; /* inline-block을 해야 각 블록마다 패딩 지정 가능 */
+            margin: 0 20px; /* inline-block을 해야 각 블록마다 마진 지정 가능 */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>로그인</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>로그인</legend>
+            <label for="user_ID">아이디<input type="text" id="user_ID" size="10" value = "abc"></label><!-- value = 기본값을 입력 시킴 -->
+            <br>
+            <label for="user_PW">비밀번호<input type="password" id="user_PW"></label>
+            <input type="submit" value = "제출"> <!-- submit -> 서버로 보내는 역할 -->
+            <input type="reset" value = "초기화"> <!-- reset -> 초기화시킴 -->
+            <!-- <input type="button" value="회원가입"> -> button -> 버튼누름 -->
+            <input type="image" src = "images/회원가입.png">
+            <br>
+            <input type="button" value="레드향" onclick="window.open('레드향.html')"><!-- '' -> ""중복 방지 -->
+            <input type="file">
+            <br>
+            <input type="hidden" value="한국에서 접속"> <!-- hidden -> 화면상 보이지 않게 함 -->
+        </fieldset>
+    </form>
+</body>
+
+</html>

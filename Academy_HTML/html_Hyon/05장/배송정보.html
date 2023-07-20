@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!-- <textarea -> 여러줄 텍스트 입력 -->
+
+<head>
+    <title>배송 정보</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <fieldset>
+                <legend>배송 정보</legend>
+                주문 상품<input type="text"><br>
+                이름<input type="text" autofocus required><br>
+                배송주소<input type="text"><br>
+                이메일<input type="email"><br>
+                연락처<input type="tel" placeholder="하이픈 빼고 입력해주세요.(01012345678)"><br>
+                배송지정<input type="date">(주문일로부터 최소 3일 이후)<br>
+                메모<textarea cols="50" rows="10"></textarea>
+            </fieldset>
+            <input type="button" value="주문하기">
+            <input type="button" value="취소하기">
+        </fieldset>
+    </form>
+</body>
+
+</html>

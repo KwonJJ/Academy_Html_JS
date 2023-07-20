@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>속성선택자07</title>
+        <style>
+            ul {
+                list-style: none;
+            }
+
+            li {
+                display: inline-block;
+                margin: 10px;
+            }
+
+            li a {
+                padding: 5px 20px;
+                font-size: 14px;
+                color: blue;
+                text-decoration: none;
+            }
+            a[href*='da'] {
+                color: blue;
+                text-decoration: none;
+            }
+
+            a[href*='na'] {
+                background: blue;
+                color: white;
+            }
+
+            a[href*='go'] {
+                background: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>주요 포탈 사이트 :</li>
+            <li><a href="https://www.daum.net">다음</a></li>
+            <li><a href="https://www.naver.com">네이버</a></li>
+            <li><a href="https://www.google.com">구글</a></li>
+        </ul>
+    </body>
+</html>
+<!-- 
+    ~=선택자  -> "-" 인식 못함
+    |=선택자  -> "-" 인식 가능
+    -> "-" 인식 가능과 못하는차이 말곤 차이 없음
+       (단어 단위로 일치 찾음.)
+
+    ^=선택자  -> 속성값의 시작부분이 일치하는 요소에 스타일 적용
+    $=선택자  -> 속성값의 끝 부분이 일치하는 요소에 스타일 적용
+    *=선택자  -> 속성값의 일부가 일치하는 속성을 가진 요소를 찾아 스타일 적용
+ -->

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>공튀기기 애니메이션</title>
+        <style>
+            .box {
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+                position: relative;
+            }
+
+            .radius {
+                width: 50px;
+                height: 50px;
+                background-color: purple;
+                border-radius: 50%;
+                position: absolute;
+                left: 70px;
+                animation: circle 0.5s infinite alternate;
+                /* 
+                애니메이션 이름(circle), 0.5초동안 무한히 실행,
+                alternate -> 정방향과 역방향으로 한 번씩 번갈아 재생(정 방향 시작)
+                */
+            }
+            @keyframes circle {
+                from {
+                    top: 0;
+                }
+                to {
+                    top: 50px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="radius"></div>
+        </div>
+    </body>
+</html>

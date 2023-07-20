@@ -1,0 +1,103 @@
+/*
+ register.css파일 생성
+ 초기화 구문 넣기
+ body 배경 옅은 회색, 패딩20
+ 
+ #signup
+ 배경흰색
+ 외각산 1px 검정, 약간 동글게
+ 패딩20, 너비 400
+ 마진 30 auto로 가운데 맞춤
+ */
+* {
+    /* 초기화 구문 */
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(209, 206, 206);
+    padding: 20px;
+}
+#signup {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    width: 400px;
+    margin: 30px auto;
+}
+ul {
+    list-style: none;
+}
+
+#signup fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+#signup legend {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+#signup ul li {
+    line-height: 30px;
+    list-style: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+}
+
+#signup fieldset button {
+    border: 1px solid #222; /* 외곽선 설정 */
+    border-radius: 20px; /* 외곽선 둥글게 */
+    display: block;
+    /* 
+    button은 기본 inline방식이기 때문에 margin:auto를 해줘도 button은 옆으로 감
+    block방식으로 바꿔줘야 margin:auto가 제대로 적용되서 button이 가운데로 옴
+     */
+    font-size: 16px; /* 글자크기 */
+    font-family: '맑은 고딕', 굴림, 돋움;
+    /* 
+    글꼴(글꼴에 띄어쓰기 있으면 '글꼴'해줘야하고 없으면 안해줘도 됨) 
+    만약 맑은고딕 글꼴이 없으면 굴림, 굴림글꼴 없으면 돋움글꼴로 넘어감
+    */
+    letter-spacing: 1px; /* 글자 간격 */
+    margin: auto; /* 가운데 맞춤 */
+    padding: 7px 25px; /* 내부 여백 */
+}
+
+#signup label {
+    float: left; /* 왼쪽으로 배치 */
+    font-size: 13px;
+    width: 110px; /* 너비를 110px로 지정 */
+}
+
+#signup input[type='text'],
+#signup input[type='password'],
+#signup input[type='tel'],
+#signup input[type='email'] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    width: 200px;
+}
+
+#signup input[required] {
+    /* required요소 들어있는 곳 스타일 설정 */
+    border: 1px solid red;
+}
+
+/*
+input:focus {
+    /* !important 넣을 시 기본값 무시하고 무조건 실행(우선순위 가장 높음) 
+    outline: none !important;
+    border: 1px solid yellow !important;
+}
+*/
+
+#signup input[readonly] {
+    border: none;
+}

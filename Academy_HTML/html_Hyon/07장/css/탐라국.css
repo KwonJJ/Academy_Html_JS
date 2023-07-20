@@ -1,0 +1,16 @@
+h1 {
+    color: rgba(128, 69, 69, 0.486); /* rgba -> (r, g, b, 투명도) */
+}
+
+h2 {
+    color: rgba(55, 55, 134, 0.562);
+}
+
+li {
+    color: #ff0000; /*16진수로 표기한 색깔 (ff: r, 00: g, 00: b)*/
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}

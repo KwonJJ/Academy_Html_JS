@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>반복문04</title>
+        <style>
+            #red {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var j = 1;
+
+            while (j <= 100) {
+                if (j % 3 == 0) {
+                    document.write("<p id = 'red'>" + j + '</p>');
+                } else {
+                    document.write('<p>' + j + '</p>');
+                }
+                j++;
+            }
+        </script>
+    </body>
+</html>
+<!-- 
+    1부터 100까지 숫자를 모두 출력
+    단 3의 배수는 글자를 빨간색으로 출력
+ -->
