@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제대 날짜 계산_강사님방식</title>
+        <style>
+            #container {
+                margin: 50px auto;
+                width: 300px;
+                height: 300px;
+                border: 2px double #ccc;
+                border-radius: 50%;
+                background: skyblue;
+                text-align: center;
+            }
+            span {
+                color: red;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>제대 날짜</h1>
+            <p>
+                <span class="accent" id="result"></span>일 남으셨습니다. <br />
+                이제 곧 집에 가요.
+            </p>
+            <p>이제 곧 집에 가요.</p>
+            <p>축하합니다!</p>
+        </div>
+        <script>
+            var now = new Date();
+            var endDay = new Date('2024/9/1'); // 제대 날짜
+            var remainTime = endDay - now; // 제대하기까지 남은 시간
+            remainTime = Math.ceil(remainTime / (1000 * 60 * 60 * 24));
+            document.querySelector('#result').innerText = remainTime;
+            // 문서에서 id가 result인 대상을 찾아 그 태그 안에 남은일수를 넣음
+        </script>
+    </body>
+</html>

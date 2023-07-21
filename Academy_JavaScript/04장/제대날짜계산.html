@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>제대 날짜 계산</title>
+        <style>
+            .container {
+                width: 300px;
+                height: 300px;
+                background: skyblue;
+                border: 2px solid #ccc;
+                border-radius: 50%;
+            }
+
+            span {
+                font-size: 30px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var now = new Date();
+            /* 오늘 날짜 */
+
+            // var endDay = new Date('2024-09-01'); // 제대 날짜(9월로 인식)
+            var endDay = new Date('2024/9/1'); // 제대 날짜(9월로 인식)
+
+            // var endDay = new Date(2024, 9, 1); // 제대 날짜
+            /*
+                월을 따로 입력하면 기존 월에서 1을 빼야함
+                new Date에서 월은 0 ~ 11까지로 표현됨 9를 쓰면 실제로는 10월로 인식
+                */
+
+            var diff = endDay.getTime() - now.getTime();
+            var result = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+            document.write("<div class = 'container'");
+
+            document.write("'<h2>' + '제대날짜' + '</h2>'");
+            document.write('<p>' + '<span>' + result + '</span>' + '일 남으셨습니다.', '</br>');
+            document.write('이제 곧 집에 가요. </br></br> 축하합니다.');
+            document.write('</p>');
+
+            document.write('</div>');
+        </script>
+    </body>
+</html>
