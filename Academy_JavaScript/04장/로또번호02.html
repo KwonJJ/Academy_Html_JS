@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>로또 번호</title>
+        <style>
+            #wrap {
+                padding-top: 100px;
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            h1 {
+                padding: 50px 0;
+            }
+
+            #wrap div {
+                display: flex;
+                justify-content: center;
+                /* 좌우 가운데 맞춤 */
+            }
+
+            #wrap p {
+                background-color: pink;
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                line-height: 100px;
+                font-size: 30px;
+            }
+
+            #wrap p:not(:first-child) {
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <h1>로또 번호 출력하기</h1>
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <script>
+            var lotto = [];
+
+            for (var i = 1; i <= 45; i++) {
+                lotto.push(i);
+                // 1~ 45까지 lotto값이 추가됨
+            }
+
+            var result = [];
+
+            for (var i = 1; i < 7; i++) {
+                var ranNum = Math.floor(Math.random() * lotto.length);
+                result[i - 1] = lotto[ranNum];
+                lotto.splice(ranNum, 1);
+            }
+
+            result.sort(function (a, b) {
+                // 출력 전에 정렬해야 제대로 정렬됨
+                // 숫자 오름차순 정렬
+                return a - b;
+            });
+
+            for (var j = 1; j < 7; j++) {
+                document.querySelector(`p:nth-child(${j})`).innerHTML = result[j - 1];
+            }
+
+            /*
+            num.sort(function compare(a, b) { // -> 옛날 방식
+                if (a > b) return 1; // return value > 0이므로 a는 b뒤에 옴
+                if (a < b) return -1; // return value < 0이므로 a는 b앞에 옴
+                return 0;
+            });
+            /* --------정식 코드--------- */
+
+            /*
+            result.sort(function (a, b) {
+                // 숫자 내림차순 정렬
+                return b - a;
+            });
+            */
+        </script>
+    </body>
+</html>
