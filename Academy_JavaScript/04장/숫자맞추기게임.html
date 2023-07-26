@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>숫자맞추기게임</title>
+        <style>
+            .container {
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                border: 1px solid black;
+                border-radius: 150px;
+                text-align: center;
+            }
+
+            h2 {
+                margin-top: 80px;
+            }
+
+            button {
+                width: 50px;
+                height: 30px;
+                border: 1px solid black;
+                background: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>숫자 맞추기 게임</h2>
+            <p id="n1"></p>
+            <p id="n2"></p>
+            <button onclick="clearInterval(start)">스톱</button>
+            <script>
+                var comN = Math.ceil(Math.random() * 10);
+                document.querySelector('#n1').innerHTML = '당신이 맞출 숫자 : ' + comN;
+
+                var start = setInterval(function () {
+                    var userN = Math.ceil(Math.random() * 10);
+                    document.querySelector('#n2').innerHTML = userN;
+                }, 100);
+            </script>
+        </div>
+    </body>
+</html>

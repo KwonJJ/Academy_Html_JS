@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>함수 01</title>
+    </head>
+    <body>
+        <script>
+            var count = 0;
+
+            myFnc(); // 일반함수
+
+            function myFnc() {
+                count++;
+                document.write('안녕하세요' + count, '<br>');
+            }
+
+            myFnc(); // 익명함수
+
+            /*
+            theFnc(); -> 일반함수 
+            theFnc 생성 전에 호출하면 인식 못함
+            */
+
+            var theFnc = function () {
+                count++;
+                document.write('byte' + count, '<br>');
+            };
+
+            theFnc(); // (익명함수) 생성 후에 호출해야 인식됨
+        </script>
+    </body>
+</html>
