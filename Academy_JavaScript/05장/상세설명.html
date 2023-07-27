@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>상세설명</title>
+        <style>
+            #item {
+                position: relative;
+                width: 500px;
+                height: auto;
+                padding: 15px 20px;
+                margin: auto;
+            }
+
+            button {
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 5px;
+                border: 1px solid #ccc;
+                font-size: 0.8em;
+            }
+
+            .over {
+                position: absolute;
+                left: 30px;
+                bottom: 30px;
+            }
+
+            .detail {
+                width: 400px;
+                text-align: left;
+                line-height: 1.8;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="item">
+            <img src="images/코스모스.jpg" />
+            <button class="over" id="open" onclick="show()">상세 설명 보기</button>
+            <div id="desc" class="detail">
+                <h4>코스모스</h4>
+                <p>
+                    꽃말 : 소녀의 순정
+                    <br />
+                    가을을 상징하는 꽃이며 곧게 선 줄기에 털이 없는 가지가 많이 갈라져 있다.
+                    <br />
+                    꽃의 색깔은 연분홍색, 흰색, 붉은색 등 매우 다양하다.
+                </p>
+                <button id="close" onclick="hide()">상세 설명 닫기</button>
+            </div>
+        </div>
+
+        <script>
+            function show() {
+                document.querySelector('#desc').style.display = 'block';
+                document.querySelector('#open').style.display = 'none';
+            }
+
+            function hide() {
+                document.querySelector('#desc').style.display = 'none';
+                document.querySelector('#open').style.display = 'block';
+            }
+        </script>
+    </body>
+</html>
