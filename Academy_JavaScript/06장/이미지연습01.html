@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            #main {
+                width: 800px;
+                text-align: center;
+                margin: 20px auto;
+            }
+
+            #main img {
+                cursor: pointer;
+                width: 70px;
+            }
+        </style>
+        <script src="js/jquery_1.12.4_jquery.min.js"></script>
+        <script>
+            function j_test(a) {
+                $(a).nextAll().attr('src', 'images/huk2.gif'); // 바꿔치기
+                /* 
+                prev -> 선택한 요소 이전(왼쪽) 요소 선택 
+                prevAll -> 선택한 요소 이전(왼쪽) 요소 모두 선택
+                next -> 선택한 요소 다음(오른쪽) 요소 선택
+                nextAll -> 선택한 요소 다음(오른쪽) 요소 모두 선택
+                */
+
+                setTimeout(function () {
+                    $(a).nextAll().attr('src', 'images/huk1.gif'); // 원상복구
+                }, 500);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <img src="images/huk1.gif" onclick="j_test(this)" />
+            <img src="images/huk1.gif" onclick="j_test(this)" />
+            <img src="images/huk1.gif" onclick="j_test(this)" />
+            <img src="images/huk1.gif" onclick="j_test(this)" />
+            <img src="images/huk1.gif" onclick="j_test(this)" />
+            <img src="images/huk1.gif" onclick="j_test(this)" />
+            <img src="images/huk1.gif" onclick="j_test(this)" />
+        </div>
+    </body>
+</html>
