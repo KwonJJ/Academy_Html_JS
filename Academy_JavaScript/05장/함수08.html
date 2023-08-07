@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>함수08</title>
+    </head>
+    <body>
+        <script>
+            (function () {
+                var n = 100; // 전역 변수
+
+                function menu() {
+                    n += 100;
+                    alert(n);
+                }
+                menu();
+            })();
+
+            (function () {
+                function menu() {
+                    alert(n);
+                }
+            });
+        </script>
+    </body>
+</html>

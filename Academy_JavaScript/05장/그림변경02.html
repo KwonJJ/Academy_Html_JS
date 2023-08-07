@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>그림변경</title>
+        <style>
+            #galleryZone {
+                position: absolute;
+                left: 500px;
+                top: 300px;
+            }
+            button {
+                position: relative;
+                bottom: 60px;
+                left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="galleryZone">
+            <p><img src="images/무등산_1.jpg" id="photo" /></p>
+            <p>
+                <button onclick="gallery(0)">이전</button>
+                <button onclick="gallery(1)">다음</button>
+            </p>
+        </div>
+
+        <script>
+            var n = 1;
+            function gallery(direct) {
+                if (direct) {
+                    if (n == 4) {
+                        n = 1;
+                    } else {
+                        n++;
+                    }
+                    /* n이 4가 되면 n = 1로 반복시킴 */
+                } else {
+                    if (n == 1) {
+                        n = 4;
+                    } else {
+                        n--;
+                    }
+                    /* n이 1이 되면 n = 4로 반복시킴 */
+                }
+
+                var imgTag = document.getElementById('photo');
+                imgTag.setAttribute('src', 'images/무등산_' + n + '.jpg');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>함수07</title>
+    </head>
+    <body>
+        <script>
+            var n = 0;
+            function sum() {
+                n++;
+                document.write(n, '<br>');
+
+                if (n == 100) return;
+                sum(); // 재귀함수 호출
+            }
+            sum();
+        </script>
+    </body>
+</html>
