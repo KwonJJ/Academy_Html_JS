@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            #main {
+                border-radius: 5px;
+                border: 5px solid gray;
+                padding: 7px;
+                width: 400px;
+            }
+
+            #main img {
+                position: relative;
+            }
+        </style>
+        <script src="js/jquery_1.12.4_jquery.min.js"></script>
+        <script>
+            function getOut() {
+                $('#main img:first').animate({ left: '-=150', opacity: '0' }, 500, function () {
+                    $(this).remove();
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <p>첫 번째 사람부터 내보내기</p>
+        <button type="button" onclick="getOut()">나가유~</button>
+        <div id="main">
+            <img src="images/huk1.gif" />
+            <img src="images/huk1.gif" />
+            <img src="images/huk1.gif" />
+            <img src="images/huk1.gif" />
+            <img src="images/huk1.gif" />
+            <img src="images/huk1.gif" />
+        </div>
+    </body>
+</html>
