@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            #main {
+                border: 3px solid gray;
+                margin: 30px;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            #main img {
+                position: relative;
+            }
+        </style>
+        <script src="js/jquery_1.12.4_jquery.min.js"></script>
+        <script>
+            function animal1() {
+                $('#main').find('.chicken').animate({ top: -100 }, 200);
+                $('#main').find('.chicken').animate({ top: 0 }, 200);
+            }
+            function animal2() {
+                $('#main').find('.cat').animate({ top: -100 }, 200);
+                $('#main').find('.cat').animate({ top: 0 }, 200);
+            }
+            function animal3() {
+                $('#main').find('.dog').animate({ top: -100 }, 200);
+                $('#main').find('.dog').animate({ top: 0 }, 200);
+            }
+            function animal4() {
+                $('#main').find('.bird').animate({ top: -100 }, 200);
+                $('#main').find('.bird').animate({ top: 0 }, 200);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>클릭한 동물을 점프시켜 봅시다!</h2>
+        <button type="button" onclick="animal1()">닭</button>
+        <button type="button" onclick="animal2()">고양이</button>
+        <button type="button" onclick="animal3()">개</button>
+        <button type="button" onclick="animal4()">새</button>
+
+        <div id="main">
+            <img src="images/bird17.gif" class="chicken" />
+            <img src="images/cat051.gif" class="cat" />
+            <img src="images/shiba2.gif" class="dog" />
+            <img src="images/bird17.gif" class="chicken" />
+            <img src="images/bird30.gif" class="bird" />
+            <img src="images/dog060.gif" class="dog" />
+            <img src="images/cat051.gif" class="cat" />
+            <img src="images/shiba2.gif" class="dog" />
+            <img src="images/cat051.gif" class="cat" />
+        </div>
+    </body>
+</html>
