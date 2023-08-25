@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            #main {
+                width: 300px;
+                height: 300px;
+                border: 5px solid lightgray;
+                background: url('images/비행기게임\ 배경.jpg');
+            }
+
+            #air {
+                position: relative;
+                left: 130px;
+                top: 200px;
+            }
+
+            #mi {
+                position: absolute;
+                left: 150px;
+                top: 220px;
+            }
+        </style>
+        <script src="js/jquery_1.12.4_jquery.min.js"></script>
+        <script>
+            $(function () {
+                $(document).on('keydown', keyEventFnc);
+                function keyEventFnc(e) {
+                    switch (e.keyCode) {
+                        case 37:
+                            $('#air').animate({ left: '-=10' }, 10);
+                            break;
+                        case 39:
+                            $('#air').animate({ left: '+=10' }, 10);
+                            break;
+                        case 38:
+                            $('#air').animate({ top: '-=10' }, 10);
+                            break;
+                        case 40:
+                            $('#air').animate({ top: '+=10' }, 10);
+                            break;
+                        case 32:
+                            $('#mi').animate({ top: -100 }, 200);
+                            $('#mi').animate({ top: 220 }, 200);
+                            break;
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <img src="images/미사일.jpg" id="mi" />
+            <img src="images/비행기.PNG" id="air" />
+        </div>
+    </body>
+</html>
