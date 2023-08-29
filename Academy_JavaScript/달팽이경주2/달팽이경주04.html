@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script src="js/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $('#start').on('click', function () {
+                    var pos = $('#main img').position();
+                    $('#main img').animate({ left: pos.left * -1 }, 10000);
+                });
+
+                $('#stop').on('click', function () {
+                    $('#main img').stop();
+                });
+            });
+        </script>
+        <style>
+            #main {
+                width: 500px;
+                height: 300px;
+                position: absolute;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="sprite1">
+                <img src="images/runner.gif" />
+            </div>
+        </div>
+    </body>
+</html>
