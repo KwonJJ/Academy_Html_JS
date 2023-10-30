@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정 */
+    border: 1px solid black;
+}
+
+body {
+    /* 
+    기본은 아래(세로)로 정렬 
+    display : flex; 사용시 옆(가로)으로 정렬됨
+    */
+    display: flex;
+    flex-direction: column;
+    /* 
+    justify-content -> 가로
+    align-items -> 세로
+    flex-direction: column; -> 레이아웃 세로로 정렬
+    */
+}
+.pad {
+    padding: 20px 0;
+}
+
+.div-wrap1 {
+    display: flex;
+    width: 408px;
+}
+
+.div-wrap2 {
+    width: 204px;
+}
+
+.div-wrap3 {
+    display: flex;
+    width: 306px;
+    background-color: transparent; /* transparent -> 투명색상 */
+    border: none;
+}
+
+.right {
+    justify-content: end; /* 요소들을 컨테이너 우측으로 정렬 */
+}
+
+.left {
+    justify-content: start; /* 요소들을 컨테이너 왼쪽으로 정렬 */
+}

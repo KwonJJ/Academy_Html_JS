@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.row {
+    display: flex;
+    width: inherit; /* inherit -> 위에 있는 'container' 부모 객체의 너비 그대로 가져옴 */
+    height: 100px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.half {
+    width: 300px;
+}
+
+.between {
+    justify-content: space-between;
+}
